@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    h1= greeting
+
+    form(method='POST', action='/users/add')
+        .form-group
+            label First Name:
+            input.form-control(name='firstName', type='text')
+        .form-group
+            label Last Name:
+            input.form-control(name='lastName', type='text')
+        .form-group
+            label Email Address:
+            input.form-control(name='email', type='email')
+        .form-group
+            label Username:
+            input.form-control(name='userName', type='text')
+        .form-group
+            label Password:
+            input.form-control(name='password', type='password')
+        .form-group
+            select(name='answerTo3Questions', id='')
+                each val in ['Are you Male or Female' , 'Where did you go to High School' , 'What city were you born in?', 'What grade are you?', 'Crunchy or Smooth Peanut Butter?']
+                    option=val
+            label Answer:
+            input.form-control(name='answerTo3Questions', type='text')
+        .form-group
+            select(name='answerTo3Questions', id='')
+                each val in ['Are you Male or Female' , 'Where did you go to High School' , 'What city were you born in?', 'What grade are you?', 'Crunchy or Smooth Peanut Butter?']
+                    option=val
+            label Answer:
+            input.form-control(name='answerTo3Questions', type='text')
+        .form-group
+            select(name='answerTo3Questions', id='')
+                each val in ['Are you Male or Female' , 'Where did you go to High School' , 'What city were you born in?', 'What grade are you?', 'Crunchy or Smooth Peanut Butter?']
+                    option=val
+            label Answer:
+            input.form-control(name='answerTo3Questions', type='text')
+        .form-group
+            label Birth Date:
+            input.form-control(name='birthDate', type='date')
+        .form-group
+            label Age:
+            input.form-control(name='age', type='number')
+        .form-group
+            label Nickname:
+            input.form-control(name='nickName', type='text')
+        br
+        input.btn.btn-primary(type='submit', value='Add User')

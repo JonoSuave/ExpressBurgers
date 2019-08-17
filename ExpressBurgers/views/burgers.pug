@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    
+    div(class="container")
+        div(class="row")
+            each burger in burgers
+                div(class="col-sm col-lg-4 text-center")
+                    h5= burger.burger
+                    img(src=burger.imageUrl class="burger-height")
+                    h6= burger.price
+                    p #{burger.description}

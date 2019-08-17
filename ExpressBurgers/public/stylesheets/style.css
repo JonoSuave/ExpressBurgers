@@ -1,0 +1,68 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.burger-height {
+  height: 200px;
+  width: 300px;
+  margin-bottom: 5%;
+}
+
+.favicon {
+  margin: 5px;
+}
+
+.location-title {
+  margin-top: 2%;
+}
+
+.menu-text {
+  color: #bc0404;
+  font-size: 20px;
+}
+
+.shakes-img, .fry-img {
+  height: 200px;
+  width: 260px;
+  margin-bottom: 5%;
+  transition: width 1s, height 1s;
+}
+
+.shakes-img:hover, .fry-img:hover {
+  width: 340px;
+  height: 280px;
+}
+
+#subNav {
+  position: relative;
+  left: 50px;
+  /* z-index: 20; */
+}
+
+#home-page {
+  background-image: url("../images/home_page_background.png");
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: 100%;
+  /* background: url("images/home_page_background.png"); */
+}
+
+#home-list-style {
+  list-style: none;
+}
+
+#title-message {
+  text-align: center;
+  color: #bc0404;
+}
+
+#welcome-text {
+  text-align: center;
+  color: #00B7FF;
+
+}

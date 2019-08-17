@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    
+    div(class="container")
+        div(class="row")
+            each shake in shakes
+                div(class="col-sm col-lg-4 text-center")
+                    h5= shake.shake
+                    img(src=shake.imageUrl class="shakes-img")
+                    h6= shake.price
+                    p #{shake.description}

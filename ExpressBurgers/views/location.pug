@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h4(class="location-title")= title
+    img(src="https://maps.googleapis.com/maps/api/staticmap?center=40.3759561,-111.8169057&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:B%7C40.3759561,-111.8169057&key=AIzaSyDdQ-wReUM47fMrZuzKPfyHjjtlxH_cBI0")
+    h6= storeName
+    h6= streetAddress
+    h6= cityStateZip

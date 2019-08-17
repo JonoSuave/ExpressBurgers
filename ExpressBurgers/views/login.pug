@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    h1= greeting
+
+    form(method='GET', action='/users/:paramsId')
+        .form-group
+            label First Name:
+            input.form-control(name='firstName', type='text')
+        .form-group
+            label Last Name:
+            input.form-control(name='lastName', type='text')
+        .form-group
+            label Email Address:
+            input.form-control(name='email', type='email')
+        .form-group
+            label Birth Date:
+            input.form-control(name='birthDate', type='date')
+        .form-group
+            label Nickname:
+            input.form-control(name='nickName', type='text')
+        br
+        input.btn.btn-primary(type='submit', value='User Details')

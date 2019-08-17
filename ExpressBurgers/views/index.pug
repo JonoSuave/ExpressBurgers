@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(id="home-page")
+    h1(id='title-message')= title
+    p(id='welcome-text') Welcome to #{title}
+    div(id="subNav")
+      ul(id="home-list-style")
+        li(class="favicon")
+          img(src="/images/favicons/nav_icon_burger.png")
+          a(class="menu-text" href=('/burgers'))    Burgers
+          
+        li(class="favicon")
+          img(src="/images/favicons/nav_icon_fries.png")      
+          a(class="menu-text" href=('/fries'))   Fries
+        li(class="favicon")
+          img(src="/images/favicons/nav_icon_cup.png")
+          a(class="menu-text" href=('/shakes'))   Shakes
+    canvas(id="myChart")
+    //- createChart(#{count})
+    script window.createChart(#{count})
+
+        
